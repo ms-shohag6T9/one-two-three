@@ -62,7 +62,6 @@ body{
     border: 2px solid white;
     font-size: 1rem;
     font-weight: bold;
-
 }
 /* ======2nd Nav where the banner shows ====== */
 .nav-banner-parent{
@@ -72,9 +71,14 @@ body{
     align-items: center;
     color: white;
     background-image: linear-gradient(90deg,#013223,#006747,#013223);
-    padding-top: 15px;
-    width: 100%;
-    padding-top:30px ;
+    padding-top: 30px;
+    width: 100%; 
+}
+.Responsive-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .banner-text-head{
     font-family: "Hind Madurai", sans-serif;
@@ -179,7 +183,7 @@ body{
     }
 /* ====== Responsive Part For mobile ====== */
 @media screen and (max-width: 576px){
-
+  
     .parent-div{
     display: none;
     }
@@ -190,12 +194,12 @@ body{
     width: 100%;
     }
     .Responsive-banner{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 20px;
-        padding: 10px;
-        margin-bottom: 25px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      padding: 10px;
+      margin-bottom: 15px;
     }
     .on-display{
            display: block;
@@ -205,7 +209,7 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 420px;
+            max-width: 415px;
             margin: 0 auto;
             padding: 0px;
             margin-top: 15px;
@@ -263,7 +267,7 @@ body{
        grid-template-rows: repeat(9, 1fr);
     }
     .cards-parent{
-      width: 350px;
+      width: 345px;
       margin: 0 auto;
     }
     .history-parent{
