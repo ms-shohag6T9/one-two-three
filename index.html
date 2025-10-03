@@ -19,331 +19,102 @@
 </head>
 <body>
 
- <nav>
-<!-- Navbar:- navbar-parent-div, this is the parent class of navbar  -->
-    <div class="navbar-parent-div"> 
-     <!-- Rightside of the Navbar text & logo div -->
-        <div class="navbar-logo">
-            <img width="85px" src="./assets/logo.png" alt="Bangladesh-Govt-Logo">
-            <h1 class="zero">
-            Emergency
-            Service
-            </h1>
-        </div>
-     <!-- Left side of the Navbar: heart, coin, copy -->
-        <div  class="heart-coin-copy">
-            <div class="coin-heart">
-                <h2>
-                    <span id="adding-heart">0</span>
-                </h2>
-                    <img width="30px" src="./assets/heart.png" alt="heart">
-            </div>
-            <div class="coin-heart">
-                <h2>
-                    <span id="default-coin">100</span>
-                </h2>
-                <img width="25px" src="./assets/coin.png" alt="coin">
-            </div>
-                <button class="navbar-btn">2 Copy</button>
-        </div>
+<nav>
+ <!-- Navbar:- navbar-parent-div, this is the parent class of navbar  -->
+  <div class="navbar-parent-div"> 
+    <!-- Rightside of the Navbar text & logo div -->
+    <div class="navbar-logo">
+      <img width="85px" src="./assets/logo.png" alt="Bangladesh-Govt-Logo">
+      <h1 class="zero">
+      Emergency
+      Service
+      </h1>
     </div>
+    <!-- Left side of the Navbar: heart, coin, copy -->
+    <div  class="heart-coin-copy">
+      <div class="coin-heart">
+        <h2>
+          <span id="adding-heart-max">0</span>
+        </h2>
+          <img width="30px" src="./assets/heart.png" alt="heart">
+      </div>
+      <div class="coin-heart">
+        <h2>
+          <span>100</span>
+        </h2>
+          <img width="25px" src="./assets/coin.png" alt="coin">
+      </div>
+      <button class="navbar-btn">Copy</button>
+    </div>
+  </div>
  <!-- Banner of Logo text title etc  -->
-    <div class="banner-parent display-one">
-            <div class="text-logo-banner">
-              <img width="92px" src="./assets/logo-dark.png" alt="Bangladesh-Govt-Logo">
-              <h1 class="zero">Emergency Service Directory</h1>
-              <p class="zero">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
-            </div>
-            <!-- below will work after 576px device -->
-             <div class="responsive-banner">
-              <img width="92px" src="./assets/logo-dark.png" alt="Bangladesh-Govt-Logo">
-            <h1 class="zero">Emergency Service Directory</h1>
-             </div>
+    <div class="banner-parent">
+      <div class="text-logo-banner">
+        <img width="92px" src="./assets/logo-dark.png" alt="Bangladesh-Govt-Logo">
+        <h1 class="zero">Emergency Service Directory</h1>
+        <p class="zero">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      </div>
+      <!-- below will work after 576px device -->
+      <div class="responsive-banner">
+        <img width="85px" src="./assets/logo-dark.png" alt="Bangladesh-Govt-Logo">
+        <h1 class="zero">Emergency Service Directory</h1>
+      </div>
     </div>
-    <!-- Responsive Part of (Heart,Coin,Copy,Call history) -->
+     <!-- Responsive Part of (Heart,Coin,Copy,Call history) -->
     <div class="responsive-navbar-parent">
-        <div>
-            <button class="rNav-button"><i class="fa-regular fa-clock"></i> Call History</button>
-        </div>
-        <div class="responsive-navbar-HCC">
-            <div class="rNavbar-common">
-                <p id="default-coin2">100</p>
-                <img width="25px" src="./assets/coin.png" alt="coin.jpg">
-            </div>
-            <div class="rNavbar-common">
-                <span id="adding-heart2">0</span>
-                <img width="25px" src="./assets/heart.png" alt="">
-            </div>
-            <div class="rNavbar-common">
-                <p><i class="fa-regular fa-copy"></i> Copy</p>
-            </div>
-        </div>
+      <div>
+        <button class="rNav-button"><i class="fa-regular fa-clock"></i> Call History</button>
+      </div>
+      <div class="responsive-navbar-HCC">
+        <div class="rNavbar-common">
+          <p id="default-coin2">100</p>
+          <img width="25px" src="./assets/coin.png" alt="coin.jpg">
+      </div>
+      <div class="rNavbar-common">
+        <span id="adding-heart-mini">0</span>
+        <img width="25px" src="./assets/heart.png" alt="">
+      </div>
+      <div class="rNavbar-common">
+        <p><i class="fa-regular fa-copy"></i> Copy</p>
+      </div>
     </div>
- </nav>
- 
-<!-- The responsive section is End here -->
+  </div>
+</nav>
 
 <!-- main card and history section -->
-<main>
-  <div class="card-container">
-    <!-- card one -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/emergency.png" alt="Emergency.jpg">
+ <main>
+  <div class="main-Grid">
+   <div class="Cards-parent">
+    <div class="img-icon">
+      <div class="img-bgColor">
+        <img width="35px" src="./assets/emergency.png" alt="Emergency.png">
       </div>
-      <p>
         <i class="fa-regular fa-heart heart-button"></i>
-      </p>
+    </div><br>
+    <div class="card-document">
+      <div class="Dcard-common">
+        <p class="zero bold-font">National Emergency Number</p>
+        <p class="zero">National Emergency</p>
     </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">National Emergency Number</h2>
-      <p style="color: #5C5C5C;" class="margin-top">National Emergency</p>
+    <div class="Dcard-common">
+        <p class="zero bold-font">999</p>
+        <p class="zero description-font">All</p>
     </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">999</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 40px;height: 30px;border-radius: 10px;" class="margin-top">All</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card1-call" class="card-btn-common btn-right">
-        <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card two -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg" style="background-color: #DFEFFF;">
-        <img width="40px" src="./assets/police.png" alt="Emergency.jpg">
+  </div><br>
+  <div class="card-button">
+    <button class="cButton-common">
+      <i class="fa-regular fa-copy "></i> Copy
+    </button>
+    <button class="cButton-common cButton-green">
+      <i class="fa-solid fa-phone "></i> Call
+     </button>
       </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Police Helpline Number</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Police</p>
-    </div>
-     
-     
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">999</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 55px;height: 30px;border-radius: 10px;" class="margin-top">Police</p>
-    </div>
-     
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card2-call" class="card-btn-common btn-right">
-       <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card three -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/fire-service.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Fire Service Number</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Fire Service</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">999</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 40px;height: 30px;border-radius: 10px;" class="margin-top">Fire</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card3-call" class="card-btn-common btn-right">
-        <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card four -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/ambulance.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Ambulance Service</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Ambulance</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">1994-999999</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 55px;height: 30px;border-radius: 10px;" class="margin-top">Health</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card4-call" class="card-btn-common btn-right">
-        <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card five -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/emergency.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Women & Child Helpline</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Woman & Child Helpline</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">109</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 40px;height: 30px;border-radius: 10px;" class="margin-top">Help</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card5-call" class="card-btn-common btn-right">
-        <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card six: this is call history card -->
-    <div class="span-row history-parent">
-     <div class="history-card">
-      <p><i class="fa-regular fa-clock"></i> Call History</p>
-       <button class="card-btn-common btn-right" style="border-radius: 30px;width: 100px;">
-        Clear
-      </button>
-     </div>
-    </div>
-    <!-- card seven -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/emergency.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Anti-Corruption Helpline</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Anti-Corruption</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">106</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 40px;height: 30px;border-radius: 10px;" class="margin-top">Govt.</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card6-call" class="card-btn-common btn-right">
-       <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card eight -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/emergency.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Electricity Helpline</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Electricity Outage</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">16216</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 75px;height: 30px;border-radius: 10px;" class="margin-top">Electricity</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card7-call" class="card-btn-common btn-right">
-        <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card nine -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/brac.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Brac Helpline</h2>
-      <p style="color: #5C5C5C;" class="margin-top">BRAC</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">16445</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 40px;height: 30px;border-radius: 10px;" class="margin-top">NGO</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card8-call" class="card-btn-common btn-right">
-        <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
-    </div>
-    <!-- card ten -->
-    <div class="cards-parent">
-    <div class="card-img-icon">
-      <div class="card-img-bg">
-        <img width="40px" src="./assets/Bangladesh-Railway.png" alt="Emergency.jpg">
-      </div>
-      <p>
-        <i class="fa-regular fa-heart heart-button"></i>
-      </p>
-    </div>
-    <div class="card-title-dis">
-      <h2 class="margin-bottom">Bangladesh Railway Helpline</h2>
-      <p style="color: #5C5C5C;" class="margin-top">Bangladesh Railway</p>
-    </div>
-    <div class="card-title-dis">
-      <h1 class="margin-bottom">163</h1>
-      <p style="background-color: #F2F2F2;color:#5C5C5C;display: flex;justify-content: center;align-items: center;width: 50px;height: 30px;border-radius: 10px;" class="margin-top">Travel</p>
-    </div>
-    <div class="card-btn">
-      <button style="color: #5C5C5C;" class="card-btn-common">
-        <i class="fa-regular fa-copy"></i> Copy
-      </button>
-      <button id="card9-call" class="card-btn-common btn-right">
-       <i class="fa-solid fa-phone"></i> Call
-      </button>
-    </div>
     </div>
   </div>
 </main>
 
+  
+    
      <script src="function.js"></script>
 </body>
 </html>
