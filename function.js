@@ -39,130 +39,129 @@ const c6Call = document.getElementById('card6-call');
 const c7Call = document.getElementById('card7-call');
 const c8Call = document.getElementById('card8-call');
 const c9Call = document.getElementById('card9-call');
-
 c1Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Emergency Service Calling 999...')
+      alert('📞Emergency Service Calling 999...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c2Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Police Helpline Calling 999...')
+      alert('📞Police Helpline Calling 999...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c3Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Fire Service Calling 999...')
+      alert('📞Fire Service Calling 999...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c4Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Ambulance Service Calling 1994-999999...')
+      alert('📞Ambulance Service Calling 1994-999999...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c5Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Woman & Child Helpline Calling 109...')
+      alert('📞Woman & Child Helpline Calling 109...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c6Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Anti-Corruption Helpline Calling 106...')
+      alert('📞Anti-Corruption Helpline Calling 106...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c7Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Electricity Helpline Calling 16216...')
+      alert('📞Electricity Helpline Calling 16216...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c8Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('BRAC Helpline Calling 16445...')
+      alert('📞BRAC Helpline Calling 16445...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
     alert('Not Enough Balance');
   }
-})
+});
 c9Call.addEventListener("click", function(){
   if(coinNumber >= 20 ){
       coinNumber = coinNumber - 20;
       coinNumber2 = coinNumber2 - 20;
       defaultCoin.innerText = coinNumber;
       defaultCoin2.innerText = coinNumber2;
-      alert('Bangladesh Railway Helpline Calling 163...')
+      alert('📞Bangladesh Railway Helpline Calling 163...')
       console.log(coinNumber);
       console.log(coinNumber2);
   }
   else{
-    alert('Not Enough Balance');
+    alert('❌Not Enough Balance');
   }
-})
+});
