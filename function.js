@@ -26,3 +26,23 @@ for (let i = 0; i < heartKey.length; i++) {
 }
 
 // call buttons are functionate below 
+const cardCallBtn = document.getElementsByClassName("callPhone");
+const defaultCoin = document.getElementById("Default-coin");
+const defaultrCoin = document.getElementById("rDefault-coin");
+let toNumber = parseInt(defaultCoin.innerText);
+let torNumber = parseInt(defaultrCoin.innerText);
+
+for( let i = 0; i < cardCallBtn.length; i++){
+  cardCallBtn[i].addEventListener("click", function(){
+  
+if (toNumber >= 20) {
+  toNumber = toNumber - 20;
+  torNumber = torNumber - 20;
+  defaultCoin.innerText = toNumber;
+  defaultrCoin.innerText = torNumber;
+  alert(this.dataset.name);
+} else {
+  alert("You don't have enough coin");
+}
+  })
+}

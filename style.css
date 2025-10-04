@@ -94,6 +94,7 @@ body{
     gap: 5px;
     font-weight: 700;
     font-style: normal;
+    
 }
 .rNav-button{
     border: 2px solid var(--primary-green);
@@ -125,7 +126,7 @@ body{
 }
 .responsive-banner{ display: none; }
 /* ===> CSS: main-Grid <=== */
-.main-Grid{
+/* .main-Grid{
   display: grid;
   grid-template-columns: repeat(4, 400px);
   grid-template-rows: repeat(3, 1fr);
@@ -134,7 +135,7 @@ body{
   margin-top: 50px;
   padding: 20px;
 
-}
+} */
 
 /* cards css */
 .Cards-parent{
@@ -152,6 +153,7 @@ body{
   font-weight: 700;
   font-style: normal;
   font-size: 1.5rem;
+  color: var(--gray-text);
 }
 .img-bgColor{
   border-radius: 12px;
@@ -177,7 +179,7 @@ body{
   border-radius: 10px;
   font-weight: 600;
   font-style: normal;
-
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .cButton-green{
   background-color: var(--primary-green);
