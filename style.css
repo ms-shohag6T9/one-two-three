@@ -22,7 +22,7 @@ body{
 .bold-font{
   font-weight: 600;
   font-style: normal;
-  font-size: 1.375rem;
+  font-size: 20px;
 }
 .description-font{
   background-color: var(--gray-bg);
