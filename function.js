@@ -46,3 +46,19 @@ if (toNumber >= 20) {
 }
   })
 }
+// history button in Responsive page
+const rhistoryBtn = document.getElementById("rHistory-button");
+const rhistoryCard = document.getElementById("rhistory-card");
+const clickHistory = rhistoryBtn.addEventListener("click", function(){
+  
+  if(rhistoryBtn.innerText === "Call History"){
+     rhistoryBtn.innerText = "Service";
+     rhistoryCard.style.display = "block";
+     
+  }
+  else{
+    rhistoryBtn.innerText = "Call History";
+    rhistoryCard.style.display = "none";
+  }
+
+})
