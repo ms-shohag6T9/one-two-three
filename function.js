@@ -47,18 +47,34 @@ if (toNumber >= 20) {
   })
 }
 // history button in Responsive page
-const rhistoryBtn = document.getElementById("rHistory-button");
-const rhistoryCard = document.getElementById("rhistory-card");
-const clickHistory = rhistoryBtn.addEventListener("click", function(){
-  
-  if(rhistoryBtn.innerText === "Call History"){
-     rhistoryBtn.innerText = "Service";
-     rhistoryCard.style.display = "block";
-     
-  }
-  else{
-    rhistoryBtn.innerText = "Call History";
-    rhistoryCard.style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+  const rhistoryBtn = document.getElementById("rHistory-button");
+  const rhistoryCard = document.getElementById("rhistory-card");
+
+  function setupView() {
+    if (window.innerWidth > 576) {
+      
+      rhistoryCard.style.display = "block";
+      rhistoryBtn.style.display = "none"; 
+    } else {
+
+      rhistoryCard.style.display = "none";
+      rhistoryBtn.style.display = "block";
+    }
   }
 
-})
+
+  rhistoryBtn.addEventListener("click", function() {
+    if (rhistoryCard.style.display === "none" || rhistoryCard.style.display === "") {
+      rhistoryCard.style.display = "block";
+      rhistoryBtn.innerText = "Service";
+    } else {
+      rhistoryCard.style.display = "none";
+      rhistoryBtn.innerText = "Call History";
+    }
+  });
+
+  setupView();
+  window.addEventListener("resize", setupView);
+});
+
