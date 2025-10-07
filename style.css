@@ -74,6 +74,11 @@ body{
     width: 125px;
     height: 60px;
 }
+.navbar-btn:hover{
+    border: 2px solid var(--primary-green);
+    background-color: var(--white);
+    color: var(--primary-green);
+}
 /* Responsive Navbar */
 .responsive-navbar-parent{ display: none; }
 
@@ -106,6 +111,10 @@ body{
     width: 120px;
     height: 58px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.rNav-button:hover{
+   background-color: var(--white);
+    color: var(--primary-green);
 }
 /* Banner css */
 .banner-parent{
@@ -147,6 +156,9 @@ body{
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.Cards-parent:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 .img-icon{
   display: flex;
   justify-content: space-between;
@@ -176,7 +188,7 @@ body{
   gap: 20px;
 }
 .cButton-common{
-  border: 1px solid var(--gray-bg);
+  border: 2px solid var(--gray-bg);
   width: 48%;
   height: 45px;
   border-radius: 10px;
@@ -184,9 +196,19 @@ body{
   font-style: normal;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.cButton-common:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--gray-text);
+  color: var(--white);
+}
 .cButton-green{
   background-color: var(--primary-green);
   color: var(--white);
+  border: 2px solid var(--primary-green);
+}
+.cButton-green:hover{
+  background-color: var(--white);
+  color: var(--primary-green);
 }
 /* ======>historycard-title-btn: a class of history card<====== */
 .historycard-title-btn{
