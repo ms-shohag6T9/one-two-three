@@ -32,6 +32,7 @@ const defaultrCoin = document.getElementById("rDefault-coin");
 let toNumber = parseInt(defaultCoin.innerText);
 let torNumber = parseInt(defaultrCoin.innerText);
 
+
 for( let i = 0; i < cardCallBtn.length; i++){
   cardCallBtn[i].addEventListener("click", function(){
   
@@ -70,6 +71,12 @@ if (toNumber >= 20) {
       historiesDiv.appendChild(pTime);
       document.querySelector("#rhistory-card").appendChild(historiesDiv);
 
+
+    const clearBTN = document.getElementById("clear-BTN");
+      clearBTN.addEventListener("click", function(){
+      document.querySelector("#rhistory-card").removeChild(historiesDiv);
+      })
+
      alert(this.dataset.alert);
 }
 
@@ -93,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-
   rhistoryBtn.addEventListener("click", function() {
     if (rhistoryCard.style.display === "none" || rhistoryCard.style.display === "") {
       rhistoryCard.style.display = "block";
@@ -108,4 +114,5 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("resize", setupView);
 });
 
+// clear btn
 
