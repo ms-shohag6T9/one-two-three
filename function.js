@@ -40,10 +40,40 @@ if (toNumber >= 20) {
   torNumber = torNumber - 20;
   defaultCoin.innerText = toNumber;
   defaultrCoin.innerText = torNumber;
-  alert(this.dataset.name);
-} else {
-  alert("You don't have enough coin");
+
+     // info Object below
+    const infoHistories = {
+    name: this.dataset.name,
+    number: this.dataset.number,
+    time: new Date().toLocaleTimeString('en-US'),
+    };
+    const historiesDiv = document.createElement("div");
+        historiesDiv.classList.add("histories");
+
+    const innerDiv = document.createElement("div");
+
+    const h4 = document.createElement("h4");
+        h4.classList.add("zero");
+        h4.innerText = infoHistories.name;
+
+    const pNumber = document.createElement("p");
+        pNumber.classList.add("zero");
+        pNumber.innerText = infoHistories.number;
+
+      innerDiv.appendChild(h4);
+      innerDiv.appendChild(pNumber);
+      historiesDiv.appendChild(innerDiv);
+
+    const pTime = document.createElement("p");
+        pTime.innerText = infoHistories.time;
+
+      historiesDiv.appendChild(pTime);
+      document.querySelector("#rhistory-card").appendChild(historiesDiv);
+
+     alert(this.dataset.alert);
 }
+
+else { alert("You don't have enough coin"); }
   })
 }
 // history button in Responsive page
@@ -77,4 +107,5 @@ document.addEventListener("DOMContentLoaded", function() {
   setupView();
   window.addEventListener("resize", setupView);
 });
+
 

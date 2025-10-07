@@ -5,7 +5,7 @@
   --dark-green: #013223;
   --light-red: #FFE3E2;
   --gray-text: #5C5C5C;
-  --gray-bg: #e7e7e7;
+  --gray-bg: #eeeeee;
   --white: #ffffff;
   --bg: #f3fffb;
 }
@@ -188,7 +188,25 @@ body{
   background-color: var(--primary-green);
   color: var(--white);
 }
-
+/* ======>historycard-title-btn: a class of history card<====== */
+.historycard-title-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-text{
+  font-size: 14px;
+}
+/* ======>history-document<====== */
+.histories{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray-bg);
+  border-radius: 9px;
+  padding: 10px;
+  margin-top: 15px;
+}
 /* ======Responsive for mobile====== */
 @media screen and (max-width: 576px){
     /* navabr in Big Screen */

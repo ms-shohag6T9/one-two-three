@@ -83,7 +83,6 @@
 
 <!-- main card and history section -->
  <main>
-
   <div class="main-Grid">
      <!-- National Emergency -->
        <div class="Cards-parent">
@@ -107,7 +106,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling National Emergency Service 999..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-name="National Emergency Number" 
+            data-number="999" 
+            data-alert=" 📞Calling National Emergency Service 999..." >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -134,7 +136,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Police 999..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Police 999..."
+            data-name="Police Helpline Number" 
+            data-number="999">
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -161,7 +166,11 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Fire Service 999..." class="cButton-common cButton-green callPhone">
+    <button  class="cButton-common cButton-green callPhone"
+             data-alert=" 📞Calling Fire Service 999..."
+             data-name="Fire Service Number"
+             data-number="999" 
+   >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -188,7 +197,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Ambulance 1994-999999..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Ambulance 1994-999999..."
+            data-name="Ambulance"
+            data-number="1994-999999" >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -215,7 +227,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Women & Child care Helpline 109..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Women & Child care Helpline 109..."
+            data-name="Women & Child Helpline"
+            data-number="109" >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -242,7 +257,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Anti-Corruption Service 106..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Anti-Corruption Service 106..."
+            data-name="Anti-Corruption Helpline"
+            data-number="106" >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -269,7 +287,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Electricity Helpline 16216..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Electricity Helpline 16216..."
+            data-name="Electricity"
+            data-number="16216" >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -296,7 +317,10 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Brac Helpline 16445..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Brac Helpline 16445..."
+            data-name="Brac Helpline"
+            data-number="16445" >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
@@ -323,19 +347,24 @@
     <button  class="cButton-common">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
-    <button data-name=" 📞Calling Bangladesh Railway Service 163..." class="cButton-common cButton-green callPhone">
+    <button class="cButton-common cButton-green callPhone" 
+            data-alert=" 📞Calling Bangladesh Railway Service 163..."
+            data-name="Bangladesh Railway Helpline"
+            data-number="163" >
       <i class="fa-solid fa-phone " ></i> Call
      </button>
       </div>
        </div>
        <!-- History Card -->
-        <div id="rhistory-card" class="Cards-parent history-card">
-          <!-- ======>History card<====== -->
-       </div>
-
-
-  </div>
-
+       <div id="rhistory-card" class="Cards-parent history-card ">
+           <!-- hitory card nav bar -->
+          <div class="historycard-title-btn">
+            <h4>
+              <i class="fa-regular fa-clock"></i> Call History
+            </h4>
+            <button class="navbar-btn btn-text">Clear</button>
+          </div>
+      </div>
 </main>
 
   
