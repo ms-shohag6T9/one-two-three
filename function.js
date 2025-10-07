@@ -124,11 +124,13 @@ let rcopyNumbering = parseInt(rcopyCount.innerText);
       for (let i = 0; i < copyBTN.length; i++) {
 
         copyBTN[i].addEventListener("click", function() {
+        
+        navigator.clipboard.writeText(this.dataset.copycount);
 
         copyNumbering = copyNumbering + 1;
-        copyCount.innerText = copyNumbering;
+         copyCount.innerText = copyNumbering;
         rcopyNumbering = rcopyNumbering + 1;
-        rcopyCount.innerText = rcopyNumbering;
+         rcopyCount.innerText = rcopyNumbering;
 
            alert("The number is copied: " + this.dataset.copycount);
        });
