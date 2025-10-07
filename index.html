@@ -44,7 +44,9 @@
         </h2>
           <img width="25px" src="./assets/coin.png" alt="coin">
       </div>
-      <button class="navbar-btn">Copy</button>
+      <button class="navbar-btn">
+        <span id="copy-button">0</span> Copy
+      </button>
     </div>
   </div>
  <!-- Banner of Logo text title etc  -->
@@ -75,13 +77,16 @@
         <img width="25px" src="./assets/heart.png" alt="">
       </div>
       <div class="rNavbar-common">
-        <p><i class="fa-regular fa-copy"></i> Copy</p>
+        <p>
+          <span id="rcopy-button">0</span>
+          Copy</p>
       </div>
     </div>
   </div>
 </nav>
 
 <!-- main card and history section -->
+
  <main>
   <div class="main-Grid">
      <!-- National Emergency -->
@@ -103,7 +108,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="999"  class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -133,7 +138,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="999"  class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -163,7 +168,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="999" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button  class="cButton-common cButton-green callPhone"
@@ -194,7 +199,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="1994-999999" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -224,7 +229,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="109" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -254,7 +259,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="106" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -284,7 +289,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="16216" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -314,7 +319,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="16445" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -344,7 +349,7 @@
     </div>
   </div><br>
   <div class="card-button">
-    <button  class="cButton-common">
+    <button data-copycount="163" class="cButton-common copy-btn">
       <i class="fa-regular fa-copy "></i> Copy
     </button>
     <button class="cButton-common cButton-green callPhone" 
@@ -366,7 +371,9 @@
             <button id="clear-BTN" class="navbar-btn btn-text">Clear</button>
            </div>
         </div>
-</main>  
+</main>
+
+<!-- Java Script Link Connected -->
      <script src="function.js"></script>
 </body>
 </html>
