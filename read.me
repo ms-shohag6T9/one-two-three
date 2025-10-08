@@ -1,0 +1,51 @@
+Q1.What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+answer:
+
+=> getElementById():
+
+    Id is such an identifier that should be used only once for an HTML element. In JavaScript, getElementById() is a pre-built function where the Id name given in HTML is used as a parameter to find that specific element. Through this, that element can be updated or changed. It always returns only one element.
+
+=> getElementsByClassName():
+
+    In HTML, class is an identifier that can be used in many elements at the same time for the same kind of work. In JavaScript, to update or change that group of elements, the pre-built function getElementsByClassName() is used. It does not return a single element directly but returns an HTMLCollection, which looks like an array and is live — meaning if the DOM changes, it also gets updated.
+
+=> querySelector() / querySelectorAll():
+
+    These are also pre-built functions in JavaScript. Their behavior is much like the previous ones, but there are some differences.
+    querySelector() returns only the first matching element, and querySelectorAll() returns a NodeList, which is almost like an HTMLCollection but static — that means it does not update when the DOM changes. Through NodeList, you can run a loop and access multiple elements at once.
+
+=> In short:
+
+   getElementById() returns a single element by its Id.
+   getElementsByClassName() returns multiple elements with the same class as an HTMLCollection.
+   querySelector() / querySelectorAll() find elements by CSS selector — the first returns one element, the second returns multiple as a NodeList.
+
+Q2.How do you create and insert a new element into the DOM?
+answer:
+
+   By using document.createElement(), we can create any element that we want. Suppose we want   to    create a div or p tag in the DOM. First, we call document.createElement("div"), then we set text, class, or other attributes, and finally we append it to the DOM.
+
+Q3.What is Event Bubbling and how does it work?
+answer:
+
+   Event Bubbling is a process where when an event happens on an element in the DOM, it first triggers on that element and then moves “upwards” step by step to its parent elements.
+   For example, if a <button> is inside a <div> and you click the button, the event will first fire on the button. Then it moves to the <div>, then to its parent elements, and can go all the way up to the root of the HTML.
+
+   In simple terms, the event spreads from the smaller element to the bigger elements — that’s how Event Bubbling works.
+
+
+Q4.What is Event Delegation in JavaScript? Why is it useful?
+answer:
+
+   Event Delegation is a technique in JavaScript where we attach an event listener to a parent element so that it can handle the events of its child elements as well, without needing to add separate listeners to each child.
+
+   This improves performance even if there are many elements, a single event listener is enough. The code also stays cleaner easier to manage and with less duplication.
+
+Q5.What is the difference between preventDefault() and stopPropagation() methods?
+answer:
+
+   Using preventDefault(), we can stop the browser’s default behavior.
+   In other words, when an event is triggered, this method is mainly used to prevent the browser from performing its usual action.
+
+   Using stopPropagation(), we can stop the spreading of an event.
+   In JavaScript, events “bubble” up to parent elements, and that’s why we use stopPropagation() to prevent the event from reaching those parent elements.
